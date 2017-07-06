@@ -1,0 +1,10 @@
+
+*.class
+vine/.project
+vine/.settings/.jsdtscope
+vine/.settings/org.eclipse.jdt.core.prefs
+vine/.settings/org.eclipse.wst.common.component
+vine/.settings/org.eclipse.wst.common.project.facet.core.xml
+vine/.settings/org.eclipse.wst.jsdt.ui.superType.container
+vine/.settings/org.eclipse.wst.jsdt.ui.superType.name
+vine/WebRoot/META-INF/MANIFEST.MF
