@@ -55,5 +55,9 @@ public class Member {
 		this.mail = mail;
 		this.regdate = regdate;
 	}
+	public Member(String userName,String pwd){
+		this.userName=userName;
+		this.pwd=pwd;
+	}
 
 }
