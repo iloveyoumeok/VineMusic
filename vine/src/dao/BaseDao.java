@@ -25,16 +25,7 @@ public class BaseDao {
 		}
 		return conn;
 	}
-	public void close() {
-		if(this.conn!=null){
-			try {
-				this.conn.close();
-			} catch (SQLException e) {
-				// TODO 自动生成的 catch 块
-				e.printStackTrace();
-			}
-		}
-	}
+
 	
 
 }

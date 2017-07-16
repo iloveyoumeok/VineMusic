@@ -9,7 +9,6 @@ import entity.Member;
 public class LoginDaoImp extends BaseDao implements LoginDao {
 
 	Connection con;
-	Statement stm;
 	PreparedStatement pstm;
 	ResultSet rs;
 
@@ -34,7 +33,15 @@ public class LoginDaoImp extends BaseDao implements LoginDao {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
-			super.close();
+			try {
+				con.close();
+				pstm.close();
+				rs.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
 		}
 
 		return member;

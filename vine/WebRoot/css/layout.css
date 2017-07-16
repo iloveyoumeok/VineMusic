@@ -1,0 +1,14 @@
+/* CSS Document */
+*{ margin:0px; padding:0px;}
+
+ul,ol{ list-style:none;}
+
+a{ text-decoration:none; color:#000;}
+
+img{ border:none;}
+
+#container{ width:968px; margin:0px auto; position:relative;}
+
+.f_l{ float:left;}
+.f_r{ float:right;}
+.clear{ clear:both;}

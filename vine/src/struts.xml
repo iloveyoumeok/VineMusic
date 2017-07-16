@@ -9,6 +9,14 @@
             <result name="success">/index.jsp</result>
             <result name="error">/login.jsp</result>
 </action>
+<action name="regist" class="action.RegistAction">
+            <result name="success">/login.jsp</result>
+            <result name="error">/regist.jsp</result>
+</action>
+<action name="issue" class="action.RegistAction">
+            <result name="success">/login.jsp</result>
+            <result name="error">/regist.jsp</result>
+</action>
 </package>
 </struts>
 

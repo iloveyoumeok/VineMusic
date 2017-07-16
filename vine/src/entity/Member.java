@@ -2,20 +2,14 @@ package entity;
 
 import java.sql.Date;
 
-public class Member {
-	private int id;
+public class Member{
+
 	private String userName;
 	private String pwd;
 	private String sex;
 	private String mail;
 	private Date regdate;
-	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
+
 	public String getuserName() {
 		return userName;
 	}
@@ -46,9 +40,8 @@ public class Member {
 	public void setRegdate(Date regdate) {
 		this.regdate = regdate;
 	}
-	public Member(int id, String userName, String pwd, String sex, String mail, Date regdate) {
+	public Member(String userName, String pwd, String sex, String mail, Date regdate) {
 		super();
-		this.id = id;
 		this.userName = userName;
 		this.pwd = pwd;
 		this.sex = sex;
@@ -59,5 +52,9 @@ public class Member {
 		this.userName=userName;
 		this.pwd=pwd;
 	}
+	public Member() {
+		// TODO Auto-generated constructor stub
+	}
+
 
 }

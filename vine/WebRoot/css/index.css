@@ -1,0 +1,80 @@
+/* CSS Document */
+.templatemo-bg-gray {
+	background-color: #eee;
+}
+
+.index_nav li {
+	float: left;
+	margin-top: 15px;
+	margin-left: 20px;
+}
+
+li.nav_gap {
+	margin-top: 0px;
+}
+
+.f_2 {
+	weight: 960px;
+	height: 55px;
+	background: url(../images/biao2.png) repeat-x;
+}
+
+.nav_div {
+	background: url(../images/a.png) repeat-x;
+	width: 970px;
+	height: 55px;
+	overflow: hidden;
+}
+
+.logo_img {
+	width: 154px;
+	height: 41px;
+	padding-top: 12px;
+	padding-left: 20px;
+	float: left;
+}
+
+.logo_wb {
+	float: left;
+	padding-top: 15px;
+	padding-left: 150px;
+	font-weight: bold;
+	color: #999;
+}
+
+.ban_menu {
+	margin-right: 110px;
+	margin-top: 5px;
+}
+
+.load_t {
+	float: right;
+	padding-top: 15px;
+	margin-left: -120px;
+	font: 14px/20px "微软雅黑";
+}
+
+.load_t a {
+	margin: 7px;
+	color: #CCC;
+}
+
+.content_l_l{
+	float:right;
+}
+.banner{float:left;}
+	.ban_menu{
+			  float:inherit;
+		  position:relative;
+		  top:-30px;
+		  margin-right:0px;
+	}
+		.ban_menu li{
+			 float:left;  		 
+			  margin:0px 20px;
+
+			   }
+			  .ban_menu li a{ 
+	 		border-radius:5px;
+			background-color: aqua;
+		}

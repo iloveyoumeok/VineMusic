@@ -7,38 +7,12 @@
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+	<link href="css/templatemo_style.css" rel="stylesheet" type="text/css">	
+<title>login</title>
 
-<title><s:text name="loginPage" /></title>
-<style type="text/css">
-body{
-background-color:#233139;
-}
-#container {
-	margin:0px auto;
-	height: 800px;
-	float: none;
-	width: 1000px;
-}
-
-#menue {
-	background-color: red; display : block;
-	height: 100px;
-	display: block;
-}
-
-#login {
-	background-color:#547687;
-	width:600px;
-	height:400px;
-	margin:50px auto;
-	padding-top: 50px;
-}
-td{ text-align:center;
-}
-h1{
-font-size: 70;
-}
-</style>
 <script type="text/javascript">
 	function checkLogin() {
 		//获取用户名文本框
@@ -49,12 +23,12 @@ font-size: 70;
 		var pwd = document.getElementById('password');
 		if (uname.value.length == 0) {
 			alert("用户名不能为空");
-			uname.focus(); //获取焦点
+
 			return false;
 		}
 		if (pwd.value.length == 0) {
 			alert("密码不能为空");
-			pwd.focus();
+
 			return false;
 		}
 		return true;
@@ -63,33 +37,43 @@ font-size: 70;
 
 </head>
 
-<body>
-		<div id="container">
-		
-			<div id="menue"></div>
-			<div id="login">
-			<form action="login" method="post" onsubmit="checkLogin()">
-				<table class="denglu" border="0" align="center" >
-					<tr>
-						<td colspan="2"><h1>welcome</h1></td>
-					</tr>
-					<tr><td>&nbsp;</td></tr>
-					<tr>
-						<td>登陆：<input type="text" name="username" id="username"></td>
-					</tr>
-					<tr><td>&nbsp;</td></tr>
-					<tr>
-						<td>密码：<input type="password" name="password" id="password"></td>
-					</tr>
-					<tr><td>&nbsp;</td></tr>
-					<tr>
-						<td><input type="submit" value="立即登陆">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset"></td>
-					</tr>
-				</table>
-				</form>
-			</div>
+	<body class="templatemo-bg-gray">
+	<div class="container">
+		<div class="col-md-12">
+			<h1 class="margin-bottom-15">welcome</h1>
+			<form class="form-horizontal templatemo-container templatemo-login-form-1 margin-bottom-30" action="login" method="post" onsubmit="checkLogin()">				
+		        <div class="form-group">
+		          <div class="col-xs-12">		            
+		            <div class="control-wrapper">
+		            	<label for="username" class="control-label fa-label"><i class="fa fa-user fa-medium"></i></label>
+		            	<input type="text" class="form-control" id="username" name="username" placeholder="Username">
+		            </div>		            	            
+		          </div>              
+		        </div>
+		        <div class="form-group">
+		          <div class="col-md-12">
+		          	<div class="control-wrapper">
+		            	<label for="password" class="control-label fa-label"><i class="fa fa-lock fa-medium"></i></label>
+		            	<input type="password" class="form-control" id="password" name="password" placeholder="Password">
+		            </div>
+		          </div>
+		        </div>
+		        <div class="form-group">
+		          <div class="col-md-12">
+		          	<div class="control-wrapper">
+		          	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		          		<input type="submit" value="立即登陆" class="btn btn-info">
+		          	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		          		<input type="reset" value="重置" class="btn btn-info">
+                    </div>
+		          </div>
+		        </div>
+<div class="form-group"> </div>
+		      </form>
+		      <div class="text-center">
+		      	<a href="regist.jsp" class="templatemo-create-new">注册用户<i class="fa fa-arrow-circle-o-right"></i></a>	
+		      </div>
 		</div>
-	
-
+	</div>
 </body>
 </html>
