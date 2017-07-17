@@ -1,33 +1,43 @@
 package entity;
 
 public class Issue {
-	private int issueId;
-	private String issueName;
-	private String issueImg;
-
-	public Issue(int issueId, String issueName, String issueImg) {
+	private String issueId;
+	private String songName;
+	private String singer;
+	private String songUrl;
+	public Issue(String issueId, String songName, String singer, String songUrl) {
 		super();
 		this.issueId = issueId;
-		this.issueName = issueName;
-		this.issueImg = issueImg;
+		this.songName = songName;
+		this.singer = singer;
+		this.songUrl = songUrl;
 	}
-	public int getIssueId() {
+	public Issue() {
+		// TODO Auto-generated constructor stub
+	}
+	public String getIssueId() {
 		return issueId;
 	}
-	public void setIssueId(int issueId) {
+	public void setIssueId(String issueId) {
 		this.issueId = issueId;
 	}
-	public String getIssueName() {
-		return issueName;
+	public String getSongName() {
+		return songName;
 	}
-	public void setIssueName(String issueName) {
-		this.issueName = issueName;
+	public void setSongName(String songName) {
+		this.songName = songName;
 	}
-	public String getissueImg() {
-		return issueImg;
+	public String getSinger() {
+		return singer;
 	}
-	public void setissueImg(String issueImg) {
-		this.issueImg = issueImg;
+	public void setSinger(String singer) {
+		this.singer = singer;
+	}
+	public String getSongUrl() {
+		return songUrl;
+	}
+	public void setSongUrl(String songUrl) {
+		this.songUrl = songUrl;
 	}
 
 }

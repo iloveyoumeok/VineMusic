@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class BaseDao {
 	private static final String driver="com.mysql.jdbc.Driver";
-	private static final String url="jdbc:mysql://localhost:3306/vinemusic";
+	private static final String url="jdbc:mysql://172.17.5.246:3306/music";
 	private static final String loginUsername="root";
 	private static final String loginUserpwd="123456";
 	private Connection conn=null;

@@ -13,9 +13,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <title>My JSP 'index.jsp' starting page</title>
 <link rel="stylesheet" type="text/css" href="css/layout.css">
 <link rel="stylesheet" type="text/css" href="css/index.css">
-
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/templatemo_style.css" rel="stylesheet" type="text/css">
 <script type="text/javascript">
  var index1=0;
+ var cow=0;
  function showImg1(){
 	 img1s=document.getElementsByClassName("banner")[0].getElementsByTagName("div");
 	 lis=document.getElementsByClassName("ban_menu")[0].getElementsByTagName("li");
@@ -32,10 +36,32 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				 index1=0;}
  }
  window.onload=showImg1;
- window.setInterval("showImg1()",2000);
+ window.setInterval("showImg1()",1500);
  function showMe(i){
-	 index1=i;}
-
+	 index1=i;
+	}
+	//ajax
+function setId(i){
+cow=i;
+}
+$(document).ready(function(){
+  $("a[name='aa']").click(function(){
+  
+  $ajax({
+  url:"issue",
+  type:"POST",
+  data:""+cow,
+  dataType:"json"
+  success:function(data){
+  
+  }
+  });
+  
+  });
+  
+  
+  
+});
 </script>
 
 </head>
@@ -88,11 +114,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<div class="content_l">
 				<!--轮播广告开始-->
 				<div class="banner">
-					<div ><a><img src="images/1.jpg" /></a></div>
-					<div ><a><img src="images/2.jpg" /></a></div>
-					<div ><a><img src="images/3.jpg" /></a></div>
-					<div ><a><img src="images/4.jpg" /></a></div>
-					<div ><a><img src="images/5.jpg" /></a></div>					
+					<div ><a name="aa" id="i1" onMouseOver="setId(2016)"><img src="images/1.jpg" /></a></div>
+					<div ><a name="aa" id="i2" onMouseOver="setId(2015)"><img src="images/2.jpg" /></a></div>
+					<div ><a name="aa" id="i3" onMouseOver="setId(2014)"><img src="images/3.jpg" /></a></div>
+					<div ><a name="aa" id="i4" onMouseOver="setId(2013)"><img src="images/4.jpg" /></a></div>
+					<div ><a name="aa" id="i5" onMouseOver="setId(2012)"><img src="images/5.jpg" /></a></div>					
 				</div>
 				<div class="content_l_l">
 				<img src="images/down.jpg" />
@@ -107,6 +133,33 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 				</ul>
 			</div>
+			
+				<div class="form1">
+		<div class="col-md-12">		
+		<table class="table table-striped table-hover">
+	      <thead>
+	        <tr>
+	          <th>#</th>
+	          <th>歌曲名</th>
+	          <th>歌手</th>
+	          <th class="text-right">Down</th>
+	        </tr>
+	      </thead>
+	      <tbody>
+	        <tr>
+	          <td>1</td>
+	          <td>Login Form 1</td>
+	          <td></td>
+	          <td class="text-right"><a href="login-1.html" class="btn btn-info"><i class="fa fa-arrow-circle-right"></i></a></td>
+	        </tr>
+	        
+
+	      </tbody>
+	    </table>
+		</div>
+	</div>
+			
+			
 		</boder>
 	</div>
 </body>
