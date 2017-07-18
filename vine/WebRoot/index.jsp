@@ -53,7 +53,6 @@ $(document).ready(function(){
   data:""+cow,
   dataType:"json",
   success:function(data){
-  
   }
   });
   
@@ -114,11 +113,11 @@ $(document).ready(function(){
 			<div class="content_l">
 				<!--轮播广告开始-->
 				<div class="banner">
-					<div ><img src="images/1.jpg" /></div>
-					<div ><img src="images/2.jpg" /></div>
-					<div ><img src="images/3.jpg" /></div>
-					<div ><img src="images/4.jpg" /></div>
-					<div ><img src="images/5.jpg" /></div>					
+					<div ><a name="aa" id="i1" onMouseOver="setId(2016)"><img src="images/1.jpg" /></a></div>
+					<div ><a name="aa" id="i2" onMouseOver="setId(2015)"><img src="images/2.jpg" /></a></div>
+					<div ><a name="aa" id="i3" onMouseOver="setId(2014)"><img src="images/3.jpg" /></a></div>
+					<div ><a name="aa" id="i4" onMouseOver="setId(2013)"><img src="images/4.jpg" /></a></div>
+					<div ><a name="aa" id="i5" onMouseOver="setId(2012)"><img src="images/5.jpg" /></a></div>					
 				</div>
 				<div class="content_l_l">
 				<img src="images/down.jpg" />

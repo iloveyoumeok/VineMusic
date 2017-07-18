@@ -5,9 +5,9 @@ public class Issue {
 	private String songName;
 	private String singer;
 	private String songUrl;
-	public Issue(String issueId, String songName, String singer, String songUrl) {
+	public Issue(String songName, String singer, String songUrl) {
 		super();
-		this.issueId = issueId;
+		
 		this.songName = songName;
 		this.singer = singer;
 		this.songUrl = songUrl;

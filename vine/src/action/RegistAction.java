@@ -32,7 +32,7 @@ public class RegistAction extends ActionSupport{
 		member.setRegdate(sqdate);
 		RegistDaoImp rdi = new RegistDaoImp();
 		i=rdi.registMember(member);
-//暂未实现弹出窗口
+
 
 
 		if(i==0){
